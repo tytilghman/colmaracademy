@@ -1,0 +1,468 @@
+
+header {
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #D8D9D9;
+}
+
+header .blue {
+  color: #188CF0;
+}
+
+header span {
+  font-size: 2rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1px;
+  font-weight: normal;
+}
+
+.logo img {
+  margin-left: .5rem;
+  height: 3rem;
+}
+
+.logo {
+  color: white;
+}
+
+nav {
+  display: inline-block;
+  padding-right: 40px;
+  float:right;
+}
+
+nav ul {
+  padding-left: 20px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  header {
+    max-height: 4rem;
+  }
+  .logo {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    display: block;
+  }
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-nav li {
+    padding: 0;
+  }
+
+  .mobile-nav li img:hover {
+    height: 2.5rem;
+  }
+}
+
+
+
+#banner {
+  position: relative;
+  top: 4rem;
+  background-color: white;
+  display: flex;
+  color: white;
+  padding: 2rem 0 2rem 1.5rem;
+  width: 100%;
+}
+
+.banner{
+  width: 60%;
+}
+
+.banner img {
+  width: 100%;
+  vertical-align: center;
+  display: inline-block;
+}
+
+.side-text {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2.5rem;
+  padding-right: 20px;
+}
+
+.side-text h1 {
+  color: black;
+  margin: 0;
+  padding: 0.4rem 0;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.side-text h3 {
+  color: black;
+  margin: 0;
+  padding: 0.4rem 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.start {
+  background-color: #188CF0;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 270px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #banner {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner {
+    width: 100%;
+    align-items: center;
+  }
+
+  .start {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    width: 40%;
+  }
+  .side-text {
+    padding: 2rem auto 2rem 1rem;
+  }
+
+  .side-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .side-text h3 {
+    font-size: 1.25rem;
+    letter-spacing: 0.2em;
+  }
+}
+
+
+#information {
+  background-color: #D8D9D9;
+  top: 4rem;
+  position: relative;
+  padding: 2rem 0 0 1.5rem;
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  width: 60%;
+}
+
+.info-main img {
+  width: 100%;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.description h1{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.description p {
+  font-size: 1.20rem;
+  line-height: 1.5;
+}
+
+.stacked {
+  width: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+  margin-right: 3rem;
+}
+
+.box {
+  display: flex;
+}
+
+.pic {
+  width: 35%;
+  margin-left: 1rem;
+}
+
+.pic img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.pic-mobile {
+  display: none;
+}
+
+.box-mobile {
+  display: none;
+}
+
+.description-side {
+  margin: auto 0;
+  padding-left: 1rem;
+}
+
+.description-side h1 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.description-side a {
+  color: #188CF0;
+}
+
+#desc-mobile {
+  display: none;
+}
+
+.highlighted {
+  background-color: #188CF0;
+  padding: 0;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.highlighted a {
+  color: #D8D9D9;
+}
+
+#lecture{
+  width: 35%;
+  margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+  .main {
+    display: none;
+  }
+
+  .stacked {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+  .box {
+    display: block;
+  }
+
+  .box-mobile {
+    display: block;
+  }
+
+  #desc-mobile {
+    display: block;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  .pic-mobile {
+    display: block;
+    width: 95%;
+  }
+
+  .pic-mobile img {
+    width: 100%;
+  }
+
+  .description-side {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .box.highlighted {
+    display: none;
+  }
+}
+
+
+#courses {
+  text-align: center;
+  justify-content: center;
+}
+
+#courses h1 {
+  font-size: 3rem;
+  padding-top: 5.5rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.course-container{
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.course-box {
+  width: 25%;
+  margin: 1rem 1rem;
+  height: 15rem;
+  background-color: #D8D9D9;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.course-box img {
+  width: 100%;
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  color: #188CF0;
+  padding-bottom: .5rem;
+}
+
+.text h3 {
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.course p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  #courses .container {
+    flex-direction: column;
+  }
+
+  .course-box {
+    height: 5rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .course-box img, .text h3 {
+    display: none;
+  }
+
+  .course p {
+    display: none;
+  }
+}
+
+
+#thesis {
+  background-color: #D8D9D9;
+}
+
+#thesis h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+#thesis-side {
+  display: flex;
+}
+
+.urban {
+  width: 85%;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.urban h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+video {
+  width: 100%;
+}
+
+.fisma{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-right: 2rem;
+
+}
+
+.side-article {
+  display: flex;
+  padding: 1rem 0 1rem 1rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+}
+
+
+.side-pic img {
+  max-height: 10rem;
+}
+
+.side-text {
+  margin-left: 1rem;
+}
+
+.side-art.highlighted {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .fisma {
+    display: none;
+  }
+}
