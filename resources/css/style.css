@@ -64,38 +64,7 @@ a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
 
-  header {
-    max-height: 4rem;
-  }
-  .logo {
-    display: none;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .mobile-nav {
-    width: 100%;
-    display: block;
-  }
-  .mobile-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  .mobile-nav li {
-    padding: 0;
-  }
-
-  .mobile-nav li img:hover {
-    height: 2.5rem;
-  }
-}
 
 
 
@@ -153,37 +122,7 @@ a:hover {
   width: 270px;
 }
 
-@media only screen and (max-width: 700px) {
 
-  #banner {
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-
-  .banner {
-    width: 100%;
-    align-items: center;
-  }
-
-  .start {
-    padding-top: 10px;
-    padding-bottom: 1px;
-    width: 40%;
-  }
-  .side-text {
-    padding: 2rem auto 2rem 1rem;
-  }
-
-  .side-text h1 {
-    font-size: 2.6rem;
-  }
-
-  .side-text h3 {
-    font-size: 1.25rem;
-    letter-spacing: 0.2em;
-  }
-}
 
 
 #information {
@@ -283,50 +222,6 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 450px) {
-
-  .main {
-    display: none;
-  }
-
-  .stacked {
-    padding: 1rem 1rem 2rem 1rem;
-    margin: 0;
-  }
-  .box {
-    display: block;
-  }
-
-  .box-mobile {
-    display: block;
-  }
-
-  #desc-mobile {
-    display: block;
-  }
-
-  .pic {
-    display: none;
-  }
-
-  .pic-mobile {
-    display: block;
-    width: 95%;
-  }
-
-  .pic-mobile img {
-    width: 100%;
-  }
-
-  .description-side {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .box.highlighted {
-    display: none;
-  }
-}
 
 
 #courses {
@@ -380,26 +275,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-@media only screen and (max-width: 450px) {
-  #courses .container {
-    flex-direction: column;
-  }
 
-  .course-box {
-    height: 5rem;
-    padding: 1rem;
-    width: 100%;
-    margin: 1rem;
-  }
-
-  .course-box img, .text h3 {
-    display: none;
-  }
-
-  .course p {
-    display: none;
-  }
-}
 
 
 #thesis {
@@ -461,8 +337,144 @@ video {
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+
+  header {
+    max-height: 4rem;
+  }
+  .logo {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    display: block;
+  }
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-nav li {
+    padding: 0;
+  }
+
+  .mobile-nav li img:hover {
+    height: 2.5rem;
+  }
+
+  #banner {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner {
+    width: 100%;
+    align-items: center;
+  }
+
+  .start {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    width: 40%;
+  }
+  .side-text {
+    padding: 2rem auto 2rem 1rem;
+  }
+
+  .side-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .side-text h3 {
+    font-size: 1.25rem;
+    letter-spacing: 0.2em;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .stacked {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+  .box {
+    display: block;
+  }
+
+  .box-mobile {
+    display: block;
+  }
+
+  #desc-mobile {
+    display: block;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  .pic-mobile {
+    display: block;
+    width: 95%;
+  }
+
+  .pic-mobile img {
+    width: 100%;
+  }
+
+  .description-side {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .box.highlighted {
+    display: none;
+  }
+
+  #courses .container {
+    flex-direction: column;
+  }
+
+  .course-box {
+    height: 5rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .course-box img, .text h3 {
+    display: none;
+  }
+
+  .course p {
+    display: none;
+  }
+
   .fisma {
     display: none;
   }
+}
+
+
+footer {
+  width: 100%;
+  height: 2rem;
+  padding-top: .5rem;
+
+}
+
+footer a {
+  float: right;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
